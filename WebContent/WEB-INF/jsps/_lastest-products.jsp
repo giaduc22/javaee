@@ -9,7 +9,7 @@
 					<div class="product-carousel">
 						<div class="single-product">
 							<div class="product-f-image">
-								<img src="img/product-1.jpg" alt="">
+								<img src="img/book1.jpg" alt="">
 								<div class="product-hover">
 									<a href="#" class="add-to-cart-link"><i
 										class="fa fa-shopping-cart"></i> Add to cart</a> <a
@@ -29,7 +29,7 @@
 						</div>
 						<div class="single-product">
 							<div class="product-f-image">
-								<img src="img/product-2.jpg" alt="">
+								<img src="img/book2.jpg" alt="">
 								<div class="product-hover">
 									<a href="#" class="add-to-cart-link"><i
 										class="fa fa-shopping-cart"></i> Add to cart</a> <a
@@ -46,7 +46,7 @@
 						</div>
 						<div class="single-product">
 							<div class="product-f-image">
-								<img src="img/product-3.jpg" alt="">
+								<img src="img/book3.jpg" alt="">
 								<div class="product-hover">
 									<a href="#" class="add-to-cart-link"><i
 										class="fa fa-shopping-cart"></i> Add to cart</a> <a
@@ -64,7 +64,7 @@
 						</div>
 						<div class="single-product">
 							<div class="product-f-image">
-								<img src="img/product-4.jpg" alt="">
+								<img src="img/book4.jpg" alt="">
 								<div class="product-hover">
 									<a href="#" class="add-to-cart-link"><i
 										class="fa fa-shopping-cart"></i> Add to cart</a> <a
@@ -84,7 +84,7 @@
 						</div>
 						<div class="single-product">
 							<div class="product-f-image">
-								<img src="img/product-5.jpg" alt="">
+								<img src="img/book5.jpg" alt="">
 								<div class="product-hover">
 									<a href="#" class="add-to-cart-link"><i
 										class="fa fa-shopping-cart"></i> Add to cart</a> <a
@@ -102,7 +102,7 @@
 						</div>
 						<div class="single-product">
 							<div class="product-f-image">
-								<img src="img/product-6.jpg" alt="">
+								<img src="img/book6.jpg" alt="">
 								<div class="product-hover">
 									<a href="#" class="add-to-cart-link"><i
 										class="fa fa-shopping-cart"></i> Add to cart</a> <a

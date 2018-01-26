@@ -152,8 +152,8 @@ z-index: 999;}
     padding: 20px;
 }
 
-.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: #5a88ca; color:#FFF;}
-.mainmenu-area .nav > li > a:focus {color: #FFF;}
+.mainmenu-area ul.navbar-nav .mainmenu-area ul.navbar-nav li.active a {background: #5a88ca; color:#6e6a6a;}
+.mainmenu-area .nav > li > a:focus {color: #6e6a6a;}
 
 .slider-area { width:80%; position:relative; margin:0 auto; padding:5px;}
 /*-------------------------
@@ -511,7 +511,6 @@ z-index: 999;}
     float: left;
     height: 90px;
     margin-right: 15px;
-    width: 100px;
 }
 .single-wid-product h2 {
     font-size: 14px;

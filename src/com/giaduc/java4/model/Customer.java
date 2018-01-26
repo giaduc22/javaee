@@ -1,5 +1,14 @@
 package com.giaduc.java4.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+
+@Entity
+@Table(name = "customer")
 public class Customer {
 
 	private int id;
@@ -19,6 +28,9 @@ public class Customer {
 		this.email = email;
 	}
 
+	@Id
+	@GeneratedValue(generator = "increment")
+	@GenericGenerator(name = "increment", strategy = "increment")
 	public int getId() {
 		return id;
 	}

@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Insert title here</title>
+<title>${param.title}</title>
 
 <!-- Google Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
@@ -28,20 +28,14 @@
 
 </head>
 <body>
-	<jsp:include page="WEB-INF/jsps/_header.jsp"></jsp:include>
-	<jsp:include page="WEB-INF/jsps/_brand.jsp"></jsp:include>
-	<jsp:include page="WEB-INF/jsps/_menu.jsp"></jsp:include>
+	<jsp:include page="_header.jsp"></jsp:include>
+	<jsp:include page="_brand.jsp"></jsp:include>
+	<jsp:include page="_menu.jsp"></jsp:include>
+	<jsp:include page="_slide.jsp"></jsp:include>
+	<jsp:include page="_lastest-products.jsp"></jsp:include>
+	<jsp:include page="_product-widget.jsp"></jsp:include>
 	
-	
-	<!-- CONTENT -->
-	<jsp:include page="WEB-INF/jsps/_detail.jsp"></jsp:include>
-	
-	<%-- <jsp:include page="WEB-INF/jsps/_slide.jsp"></jsp:include>
-	<jsp:include page="WEB-INF/jsps/_lastest-products.jsp"></jsp:include>
-	<jsp:include page="WEB-INF/jsps/_product-widget.jsp"></jsp:include> --%>
-	<!-- END CONTENT -->
-	
-	<jsp:include page="WEB-INF/jsps/_footer.jsp"></jsp:include>
+	<jsp:include page="_footer.jsp"></jsp:include>
 	
 	<!-- Latest jQuery form server -->
     <script src="https://code.jquery.com/jquery.min.js"></script>

@@ -32,11 +32,11 @@
                     <div class="footer-menu">
                         <h2 class="footer-wid-title">Categories</h2>
                         <ul>
-                            <li><a href="#">Mobile Phone</a></li>
-                            <li><a href="#">Home accesseries</a></li>
-                            <li><a href="#">LED TV</a></li>
-                            <li><a href="#">Computer</a></li>
-                            <li><a href="#">Gadets</a></li>
+                            <li><a href="#">Non-fiction</a></li>
+                            <li><a href="#">Biographies</a></li>
+                            <li><a href="#">Fiction</a></li>
+                            <li><a href="#">Joke and riddle books</a></li>
+                            <li><a href="#">Picture story books</a></li>
                         </ul>                        
                     </div>
                 </div>

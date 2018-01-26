@@ -1,17 +1,17 @@
 package com.giaduc.java4.model;
 
-public class Order_item {
+public class OrderItem {
 
 	private int id;
 	private int order_id;
 	private int book_id;
 	private int amount;
 
-	public Order_item() {
+	public OrderItem() {
 		super();
 	}
 
-	public Order_item(int id, int order_id, int book_id, int amount) {
+	public OrderItem(int id, int order_id, int book_id, int amount) {
 		super();
 		this.id = id;
 		this.order_id = order_id;
