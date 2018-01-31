@@ -1,5 +1,14 @@
 package com.giaduc.java4.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+
+@Entity
+@Table(name = "book")
 public class Book {
 
 	private int id;
@@ -28,6 +37,9 @@ public class Book {
 		this.author_id = author_id;
 	}
 
+	@Id
+	@GeneratedValue(generator = "increment")
+	@GenericGenerator(name = "increment", strategy = "increment")
 	public int getId() {
 		return id;
 	}
@@ -91,7 +103,5 @@ public class Book {
 	public void setAuthor_id(int author_id) {
 		this.author_id = author_id;
 	}
-	
-	
 
 }

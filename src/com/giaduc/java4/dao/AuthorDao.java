@@ -21,10 +21,6 @@ public class AuthorDao {
 			List<Author> authors = new ArrayList<>();
 			Criteria criteria = session.createCriteria(Author.class);
 			authors = criteria.list();
-			System.out.println(authors);
-			for (int i = 0; i < authors.size(); i++) {
-				System.out.println(authors.get(i).getId());
-			}
 			session.getTransaction().commit();
 			return authors;
 		} catch (Exception e) {

@@ -7,6 +7,7 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 
 import com.giaduc.java4.conn.HibernateUtil;
+import com.giaduc.java4.model.Book;
 import com.giaduc.java4.model.Category;
 
 public class CategoryDao {
@@ -21,12 +22,25 @@ public class CategoryDao {
 			List<Category> categories = new ArrayList<>();
 			Criteria criteria = session.createCriteria(Category.class);
 			categories = criteria.list();
-			System.out.println(categories);
-			for (int i = 0; i < categories.size(); i++) {
-				System.out.println(categories.get(i).getId());
-			}
 			session.getTransaction().commit();
 			return categories;
+		} catch (Exception e) {
+			session.getTransaction().rollback();
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+		return null;
+	}
+	
+	public Category getOneCategory(int categoryId) {
+		Category category = new Category();
+		session = HibernateUtil.getSessionFactory().openSession();
+		try {
+			session.beginTransaction();
+			category = session.get(Category.class, categoryId);
+			session.getTransaction().commit();
+			return category;
 		} catch (Exception e) {
 			session.getTransaction().rollback();
 			e.printStackTrace();

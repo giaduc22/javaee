@@ -149,7 +149,6 @@ z-index: 999;}
 .mainmenu-area ul.navbar-nav li a {
     color: #6e6a6a;
     font-size: 14px;
-    padding: 20px;
 }
 
 .mainmenu-area ul.navbar-nav .mainmenu-area ul.navbar-nav li.active a {background: #5a88ca; color:#6e6a6a;}
@@ -695,7 +694,7 @@ width: 10px;
 .single-product-area .zigzag-bottom {background-color: #f4f4f4}
 
 .single-product-area {
-  padding: 80px 0 130px;
+  padding: 20px 0 130px;
 }
 
 

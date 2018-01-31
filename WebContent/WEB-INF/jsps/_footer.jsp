@@ -1,3 +1,6 @@
+<%@page import="com.giaduc.java4.model.Category"%>
+<%@page import="java.util.List"%>
+<%@page import="com.giaduc.java4.dao.CategoryDao"%>
 <div class="footer-top-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
@@ -32,11 +35,16 @@
                     <div class="footer-menu">
                         <h2 class="footer-wid-title">Categories</h2>
                         <ul>
-                            <li><a href="#">Non-fiction</a></li>
-                            <li><a href="#">Biographies</a></li>
-                            <li><a href="#">Fiction</a></li>
-                            <li><a href="#">Joke and riddle books</a></li>
-                            <li><a href="#">Picture story books</a></li>
+                        	<%
+	                        	CategoryDao categoryDao = new CategoryDao();
+	                			List<Category> categories = categoryDao.getAllCategory();
+	                			for(int i = 0; i < categories.size(); i++){
+	                				String categoryName = categories.get(i).getName();
+                        	%>
+                            		<li><a href="#"><%= categoryName %></a></li>
+                            <%
+                        		}
+                            %>
                         </ul>                        
                     </div>
                 </div>

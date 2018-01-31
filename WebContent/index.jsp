@@ -1,5 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	
+<% 
+	final String SHOP_PAGE = "/shop";
+	final String DETAIL_PAGE = "/detail";
+	final String LOGIN_PAGE = "/login";
+	final String REGISTER_PAGE = "/register";
+	final String CART_PAGE = "/cart";
+%>	
+	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -34,11 +43,42 @@
 	
 	
 	<!-- CONTENT -->
-	<jsp:include page="WEB-INF/jsps/_detail.jsp"></jsp:include>
-	
-	<%-- <jsp:include page="WEB-INF/jsps/_slide.jsp"></jsp:include>
-	<jsp:include page="WEB-INF/jsps/_lastest-products.jsp"></jsp:include>
-	<jsp:include page="WEB-INF/jsps/_product-widget.jsp"></jsp:include> --%>
+		<%
+			if(DETAIL_PAGE.equals(request.getAttribute("path"))){
+		%>
+				<jsp:include page="WEB-INF/jsps/_detail.jsp"></jsp:include>
+		<%	
+			} else if(CART_PAGE.equals(request.getAttribute("path"))){
+				%>
+					<jsp:include page="WEB-INF/jsps/_cart.jsp"></jsp:include>
+				<%	
+				
+			} else if(LOGIN_PAGE.equals(request.getAttribute("path"))){
+				%>
+					<jsp:include page="WEB-INF/jsps/_login.jsp"></jsp:include>
+				<%	
+				
+			} else if(REGISTER_PAGE.equals(request.getAttribute("path"))){
+				%>
+					<jsp:include page="WEB-INF/jsps/_register.jsp"></jsp:include>
+				<%	
+				
+			} else if(SHOP_PAGE.equals(request.getAttribute("path"))){
+				%>
+					<jsp:include page="WEB-INF/jsps/_shop.jsp"></jsp:include>
+				<%	
+				
+			}
+			
+			
+			else {
+		%>
+			<jsp:include page="WEB-INF/jsps/_slide.jsp"></jsp:include>
+			<jsp:include page="WEB-INF/jsps/_lastest-products.jsp"></jsp:include>
+			<jsp:include page="WEB-INF/jsps/_product-widget.jsp"></jsp:include>
+		<%
+			}
+		%>
 	<!-- END CONTENT -->
 	
 	<jsp:include page="WEB-INF/jsps/_footer.jsp"></jsp:include>

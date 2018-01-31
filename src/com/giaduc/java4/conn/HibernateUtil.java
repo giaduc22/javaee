@@ -1,12 +1,7 @@
 package com.giaduc.java4.conn;
 
 import org.hibernate.SessionFactory;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.service.ServiceRegistry;
-
-import com.giaduc.java4.model.Author;
-import com.giaduc.java4.model.Category;
 
 public class HibernateUtil {
 

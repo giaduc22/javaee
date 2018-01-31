@@ -4,9 +4,9 @@
                 <div class="col-md-8">
                     <div class="user-menu">
                         <ul>
-                            <li><a href="#"><i class="fas fa-user"></i> My Account</a></li>
+                            <li><a href="register"><i class="fas fa-user"></i> My Account</a></li>
                             <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
-                            <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                            <li><a href="login"><i class="fa fa-user"></i> Login</a></li>
                         </ul>
                     </div>
                 </div>
